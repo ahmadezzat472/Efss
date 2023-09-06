@@ -124,12 +124,10 @@
 
     .experience__icons i:first-child {
         font-size: 260px;
-        color: var(--maincolor);
     }
     
     .experience__icons i:last-child {
         font-size: 180px;
-        color: var(--maincolor);
     }
 
     .experience__content {
