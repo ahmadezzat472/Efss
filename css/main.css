@@ -344,7 +344,7 @@ button {
 	}
 
 	.nav__item-list {
-		top: -762%;
+		top: -760%;
 		border-radius: 5px 5px 0 0;
 	}
 
@@ -390,7 +390,7 @@ button {
 }
 @media screen and (max-width: 350px) {
 	.nav__item-list {
-		left: -100%;
+		left: -120%;
 	}
 }
 
