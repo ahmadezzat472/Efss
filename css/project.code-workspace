@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../full stack/Course/projects/final project/work"
+	},
+	{
+		"path": "../../full stack/Course/projects/project team"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "project"
+  }
+}
