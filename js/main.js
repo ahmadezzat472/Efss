@@ -8,6 +8,24 @@ list.onclick = function() {
 }
 
 
+/*=============== SHOW SCROLL UP ===============*/
+let up = document.querySelector(".scrollup");
+window.onscroll = function () {
+    if (scrollY >= 450) {
+        up.classList.add("show");
+    } else {
+        up.classList.remove("show");
+    }
+};
+
+up.onclick = function () {
+    scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
+
+
 /*=============== SWIPER POPULAR ===============*/
 var swiperPopular = new Swiper(".top__container", {
     spaceBetween: 32,
@@ -35,3 +53,5 @@ var swiperPopular = new Swiper(".top__container", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+

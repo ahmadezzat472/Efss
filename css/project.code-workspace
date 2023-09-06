@@ -1,15 +1,18 @@
 {
   "folders": [
-	{
-		"path": ".."
-	},
-	{
-		"path": "../../full stack/Course/projects/final project/work"
-	},
-	{
-		"path": "../../full stack/Course/projects/project team"
-	}
-],
+    {
+      "path": ".."
+    },
+    {
+      "path": "../../full stack/Course/projects/final project/work"
+    },
+    {
+      "path": "../../full stack/Course/projects/project team"
+    },
+    {
+      "path": "../../full stack/Course/tasks/Assignment7-Ahmed_Ezzat-G104"
+    }
+  ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "project"
   }

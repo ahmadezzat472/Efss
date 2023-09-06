@@ -90,6 +90,7 @@ button {
     font-size: var(--h1-font-size);
     margin-bottom: 16px;
 	color: var(--title-color);
+	text-transform: capitalize;
 }
 
 .section__title span {
@@ -145,7 +146,7 @@ button {
 .topbar {
     padding: 10px 0;
     border-bottom: #9b9b9b52  0.1px solid;
-    /* color: var(--text-color); */
+	background-color: #9e9e9e0f;
 }
 
 .topbar__list {
@@ -602,7 +603,7 @@ button {
 
 /*=============== top ===============*/ /*=============== top ===============*/
 .section.top {
-	background-color: #d8d9da40;
+	background-color: #f1f1f1;
 	padding: 40px;
 }
 
@@ -654,6 +655,7 @@ button {
 	font-size: var(--h2-font-size);
 	font-weight: bold;
 	color: var(--text-color);
+	text-transform: uppercase;
 }
 
 .top__title {
@@ -785,6 +787,7 @@ button {
 .footer {
 	background-color: #d8d9da40;
 	padding: 90px 0 95px;
+	box-shadow: 0px 6px 15px 0px #00000070;
 }
 
 .footer__container {
@@ -940,9 +943,44 @@ transform: translateX(6px);
 	}
 }
 
+/*=============== SCROLL UP ===============*/ /*=============== SCROLL UP ===============*/
+.scrollup {
+	position: fixed;
+	right: 16px;
+	bottom: -30px;
+	background-color: #9e9e9e33;
+	box-shadow: 0 8px 12px hsla(228, 66%, 45%, 0.1);
+	display: inline-flex;
+	padding: 6px;
+	border-radius: 4px;
+	color: var(--title-color);
+	font-size: 15px;
+	z-index: 10;
+	transition: var(--more-transition);
+}
 
+.scrollup:hover {
+	transform: translate(-4px);
+	color: var(--first-color);
+}
 
+.scrollup i {
+	transform: rotate(-180deg);
+}
 
+/* Show Scroll Up*/
+.show {
+	bottom: 150px;
+}
+
+@media screen and (min-width: 1023px) {
+	.show {
+		bottom: 48px;
+		right: 48px;
+	}
+}
+
+/* other */
 .item-show {
 	display: block;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About US Page</title>
+    <title>Access Control Page</title>
     <!--=============== FAVICON ===============-->
     <link
         rel="shortcut icon"
@@ -12,9 +12,11 @@
     />
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/about.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/product.css" />
 </head>
 <body>
     <!--==================== Top bar ====================-->
@@ -22,7 +24,7 @@
         <div class="container">
             <div class="topbar__row">
             <div class="topbar__contact">
-                <a class="topbar__info" href="https://api.whatsapp.com/send?phone=01202501222" target="_blank" title="Go To Whatsapp"
+                <a class="topbar__info" href="https://api.whatsapp.com/send?phone=+201202501222" target="_blank" title="Go To Whatsapp"
                 ><i class="fa-solid fa-phone-volume"></i>01202501222</a
                 >
                 <span class="topbar__line">|</span>
@@ -72,19 +74,19 @@
                             </a>
                         </li>
                         <li class="nav__item" id="product">
-                            <a href="#product" class="nav__link">
+                            <a href="#product" class="nav__link active-link">
                                 <i class="fa-solid fa-diagram-project"></i>
                                 <span>Product</span>
                             </a>
                             <ul class="nav__item-list">
                                 <li><a href="printer.html">printer</a></li>
                                 <li><a href="pvc.html">pvc</a></li>
-                                <li><a href="Access.html">Access control</a></li>
+                                <li><a href="access.html">Access control</a></li>
                                 <li><a href="web.html">Web development</a></li>
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <a href="about.html" class="nav__link active-link">
+                            <a href="about.html" class="nav__link">
                                 <i class="fa-solid fa-award"></i>
                                 <span>about</span>
                             </a>
@@ -102,43 +104,63 @@
     </header>
 
     <!--==================== MAIN ====================-->
-    <main>
-        <!--==================== hero ====================-->
-        <section class="hero">
+    <main class="main">
+
+        <!--==================== MAIN Headder ====================-->
+        <header class="main-header">
+            <div class="container-main container">
+                <h1>our products</h1>
+                <div class="main-header__filter">
+                    <span>Contains:</span>
+                    <a href="#" class="main-header__links">
+                        <i class="fa-regular fa-gem"></i>
+                        design
+                    </a>
+                    <a href="#" class="main-header__links">
+                        <i class="fa-regular fa-image"></i>
+                        photos
+                    </a>
+                    <!-- <a href="#" class="main-header__links">
+                        <i class="fa-solid fa-map-pin"></i>		
+                        art
+                    </a> -->
+                </div>
+            </div>
+        </header>
+
+        <!--==================== product ====================-->
+        <section class="product">
             <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__main-title">about us</h1>
-                    <span class="underline"></span>
-                    <p class="paragraph hero__paragraph">
-                        hello, Here You Can Find Our Experience.
-                    </p>
+                <h1 class="product__available">All types available</h1>
+                <div class="flex-container">
+                    <article class="product__card">
+                        <div class="product__image-wrapper">
+                            <img class="product__image" src="img/access conrol1.jpg" alt="project-1 viewport preview"/>
+                        </div>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__image-wrapper">
+                            <img class="product__image" src="img/access conrol2.jpg" alt="project-1 viewport preview"/>
+                        </div>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__image-wrapper">
+                            <img class="product__image" src="img/access conrol3.jpg" alt="project-1 viewport preview"/>
+                        </div>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__image-wrapper">
+                            <img class="product__image" src="img/access conrol4.jpg" alt="project-1 viewport preview"/>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!--==================== experience ====================-->
-        <section class="experience section">
-            <div class="container experience__container">
-                <div class="experience__icons">
-                    <i class="fa-solid fa-1 teal-color"></i>
-                    <i class="fa-brands fa-opera"></i>
-                </div>
-                <div class="experience__content">
-                    <h2 class="experience__title">Years Of Experience</h2>
-                    <p class="experience__description">
-                        Effs  stands out for the experience and expertise of its professional team. EFSS was established in 2015 as the sole 
-                        distributor for two matica companies in Greater Cairo and industrial areas, and then expanded its activity by providing 
-                        a comprehensive security system for clubs, universities, companies and institutions. One year later, EFSS established a 
-                        streamlined card development department and demonstrated rapid and successful growth. By focusing on market needs and quickly
-                        responding to those needs through customization solutions, EFSS has completed its growth by exporting its systems to some Arab 
-                        countries. EFSS always maintains its relationships with its customers and their loyalty through technical support and strong 
-                        customer feedback. EFSS specializes in access control, attendance, security systems and smart solutions through smart cards.
-                    </p>
-                </div>
-            </div>
-        </section>
     </main>
-
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
         <div class="container footer__container">
@@ -208,3 +230,4 @@
     <!-- Main JS File -->
     <script src="js/main.js"></script>
 </body>
+</html>
